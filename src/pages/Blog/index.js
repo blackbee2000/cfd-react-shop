@@ -1,23 +1,9 @@
+import Breadcrumb from "../../components/Breadcrumb";
+
 export default function Blog(){
     return(
         <div>
-            <nav className="py-5">
-            <div className="container">
-                <div className="row">
-                <div className="col-12">
-                    {/* Breadcrumb */}
-                    <ol className="breadcrumb mb-0 font-size-xs text-gray-400">
-                    <li className="breadcrumb-item">
-                        <a className="text-gray-400" href="index.html">Home</a>
-                    </li>
-                    <li className="breadcrumb-item active">
-                        Blog
-                    </li>
-                    </ol>
-                </div>
-                </div>
-            </div>
-            </nav>
+            <Breadcrumb activePage={'Blog'}/>
             {/* CONTENT */}
             <section className="pt-7 pb-12">
             <div className="container">

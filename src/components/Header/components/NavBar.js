@@ -447,8 +447,8 @@ export default function NavBar(){
                     </a>
                 </li>
                 <li className="nav-item ml-lg-n4">
-                    <a className="nav-link" href="./account-orders.html">
-                    <i className="fe fe-user" />
+                    <a className="nav-link">
+                        <i className="fe fe-user" />
                     </a>
                 </li>
                 <li className="nav-item ml-lg-n4">
