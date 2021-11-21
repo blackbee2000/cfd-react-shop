@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Tags(){
     return(
         <div>
@@ -8,7 +10,7 @@ export function Tags(){
                 {/* Breadcrumb */}
                 <ol className="breadcrumb mb-md-0 font-size-xs text-gray-400">
                 <li className="breadcrumb-item">
-                    <a className="text-gray-400" href="index.html">Home</a>
+                    <Link className="text-gray-400" to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item active">
                     Women's Clothing

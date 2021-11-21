@@ -1,10 +1,22 @@
-import Breadcrumb from "../../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../../components/Breadcrumb";
+import Layout from "../../../components/Layout";
+import { useForm } from "../../../cores/useForm";
 import AccountTags from "../components/AccountTags";
 
 export default function AccountPersonalInfo(){
+
+    let {register, form, handleSubmit, error} = useForm();
+
+    const submit = (form) => {
+        console.log('form', form);
+    }
+
     return(
-        <div>
-            <Breadcrumb activePage={'My Account'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/account">My Account</BreadcrumbItem>
+            </Breadcrumb>
             <section class="pt-7 pb-12">
                 <div class="container">
                     <div class="row">
@@ -16,7 +28,7 @@ export default function AccountPersonalInfo(){
                         <AccountTags />
                         <div className="col-12 col-md-9 col-lg-8 offset-lg-1">
                             {/* Form */}
-                            <form>
+                            <form onSubmit={handleSubmit(submit)}>
                             <div className="row">
                                 <div className="col-12 col-md-6">
                                 {/* Email */}
@@ -24,7 +36,8 @@ export default function AccountPersonalInfo(){
                                     <label htmlFor="accountFirstName">
                                     First Name *
                                     </label>
-                                    <input className="form-control form-control-sm" id="accountFirstName" type="text" placeholder="First Name *" defaultValue="Daniel" required />
+                                    <input {...register('firstName', {required: true})} className="form-control form-control-sm" id="accountFirstName" type="text" placeholder="First Name *" />
+                                    { error.firstName && <p className="error-text">{error.firstName}</p> }
                                 </div>
                                 </div>
                                 <div className="col-12 col-md-6">
@@ -33,7 +46,8 @@ export default function AccountPersonalInfo(){
                                     <label htmlFor="accountLastName">
                                     Last Name *
                                     </label>
-                                    <input className="form-control form-control-sm" id="accountLastName" type="text" placeholder="Last Name *" defaultValue="Robinson" required />
+                                    <input {...register('lastName', {required: true})} className="form-control form-control-sm" id="accountLastName" type="text" placeholder="Last Name *" />
+                                    { error.lastName && <p className="error-text">{error.lastName}</p> }
                                 </div>
                                 </div>
                                 <div className="col-12">
@@ -42,7 +56,8 @@ export default function AccountPersonalInfo(){
                                     <label htmlFor="accountEmail">
                                     Email Address *
                                     </label>
-                                    <input className="form-control form-control-sm" id="accountEmail" type="email" placeholder="Email Address *" defaultValue="user@email.com" required />
+                                    <input {...register('email', {patern: 'email'})} className="form-control form-control-sm" id="accountEmail" type="email" placeholder="Email Address *" />
+                                    { error.email && <p className="error-text">{error.email}</p> }
                                 </div>
                                 </div>
                                 <div className="col-12 col-md-6">
@@ -51,7 +66,8 @@ export default function AccountPersonalInfo(){
                                     <label htmlFor="accountPassword">
                                     Current Password *
                                     </label>
-                                    <input className="form-control form-control-sm" id="accountPassword" type="password" placeholder="Current Password *" required />
+                                    <input {...register('password', {min: 6, max: 32})} className="form-control form-control-sm" id="accountPassword" type="password" placeholder="Current Password *" />
+                                    { error.password && <p className="error-text">{error.password}</p> }
                                 </div>
                                 </div>
                                 <div className="col-12 col-md-6">
@@ -60,7 +76,8 @@ export default function AccountPersonalInfo(){
                                     <label htmlFor="AccountNewPassword">
                                     New Password *
                                     </label>
-                                    <input className="form-control form-control-sm" id="AccountNewPassword" type="password" placeholder="New Password *" required />
+                                    <input {...register('password', {min: 6, max: 32})} className="form-control form-control-sm" id="AccountNewPassword" type="password" placeholder="New Password *" />
+                                    { error.password && <p className="error-text">{error.password}</p> }
                                 </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
@@ -130,6 +147,6 @@ export default function AccountPersonalInfo(){
                     </div>
                 </div>
             </section>        
-        </div>
+        </Layout>
     )
 }

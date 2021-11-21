@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function AboutComponent(){
     return(
             <section className="py-12 bg-light">
@@ -39,9 +41,9 @@ export function AboutComponent(){
                 <div className="row">
                     <div className="col-12 text-center">
                     {/* Button */}
-                    <a className="btn btn-dark" href="shop.html">
+                    <Link className="btn btn-dark" to="/shop">
                         Shop Now <i className="fe fe-arrow-right ml-2" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 </div>

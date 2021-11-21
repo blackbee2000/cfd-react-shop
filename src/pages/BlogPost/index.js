@@ -1,9 +1,14 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function BlogPost(){
     return(
-        <div>
-            <Breadcrumb page={'Blog'} activePage={'B5 Tips to Increase Your Online Saleslog'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/blog">Blog</BreadcrumbItem>
+                <BreadcrumbItem to="#">B5 Tips to Increase Your Online Saleslog</BreadcrumbItem>
+            </Breadcrumb>
             {/* ARTICLE */}
             <article className="pt-7">
             {/* HEADER */}
@@ -279,6 +284,6 @@ export default function BlogPost(){
             </div>
           </div>
         </section>
-        </div>
+        </Layout>
     )
 }

@@ -1,9 +1,15 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function CheckOut(){
     return(
-        <div>
-            <Breadcrumb page={'Shopping Cart'} activePage={'Checkout'}/>
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/checkout">Shopping Cart</BreadcrumbItem>
+                <BreadcrumbItem to="/checkout">Checkout</BreadcrumbItem>
+            </Breadcrumb>
             <section className="pt-7 pb-12">
                 <div className="container">
                     <div className="row">
@@ -299,14 +305,14 @@ export default function CheckOut(){
                             <div className="row align-items-center">
                             <div className="col-4">
                                 {/* Image */}
-                                <a href="product.html">
+                                <Link to="/product">
                                 <img src="/img/products/product-6.jpg" alt="..." className="img-fluid" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="col">
                                 {/* Title */}
                                 <p className="mb-4 font-size-sm font-weight-bold">
-                                <a className="text-body" href="product.html">Cotton floral print Dress</a> <br />
+                                <Link className="text-body" to="/product">Cotton floral print Dress</Link> <br />
                                 <span className="text-muted">$40.00</span>
                                 </p>
                                 {/* Text */}
@@ -321,14 +327,14 @@ export default function CheckOut(){
                             <div className="row align-items-center">
                             <div className="col-4">
                                 {/* Image */}
-                                <a href="product.html">
+                                <Link to="/product">
                                 <img src="/img/products/product-10.jpg" alt="..." className="img-fluid" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="col">
                                 {/* Title */}
                                 <p className="mb-4 font-size-sm font-weight-bold">
-                                <a className="text-body" href="product.html">Suede cross body Bag</a> <br />
+                                <Link className="text-body" to="/product">Suede cross body Bag</Link> <br />
                                 <span className="text-muted">$49.00</span>
                                 </p>
                                 {/* Text */}
@@ -451,6 +457,6 @@ export default function CheckOut(){
                 </div>
             </div>
             </section>
-        </div>
+        </Layout>
     )
 }

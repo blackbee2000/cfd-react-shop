@@ -1,9 +1,22 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
+import { useForm } from "../../cores/useForm";
+import '../../assets/custom.scss';
 
 export default function ContactUs(){
+
+    let {register, form, handleSubmit, error} = useForm();
+
+    const submit = (form) => {
+        console.log('form', form);
+    }
+
     return(
-        <div>
-            <Breadcrumb activePage={'Contact Us'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/contact-us">Contact Ust</BreadcrumbItem>
+            </Breadcrumb>
             <section className="pt-7 pb-12">
                 <div className="container">
                 <div className="row">
@@ -71,37 +84,41 @@ export default function ContactUs(){
                     </div>
                     <div className="col-12 col-md-8">
                     {/* Form */}
-                    <form>
+                    <form onSubmit={handleSubmit(submit)}>
                         {/* Email */}
                         <div className="form-group">
                         <label className="sr-only" htmlFor="contactName">
                             Your Name *
                         </label>
-                        <input className="form-control form-control-sm" id="contactName" type="text" placeholder="Your Name *" required />
+                        <input {...register('name', {required: true})} className="form-control form-control-sm" id="contactName" type="text" placeholder="Your Name *" />
+                        { error.name && <p className="error-text">{error.name}</p> }
                         </div>
                         {/* Email */}
                         <div className="form-group">
                         <label className="sr-only" htmlFor="contactEmail">
                             Your Email *
                         </label>
-                        <input className="form-control form-control-sm" id="contactEmail" type="email" placeholder="Your Email *" required />
+                        <input {...register('email', {patern: 'email'})} className="form-control form-control-sm" id="contactEmail" type="email" placeholder="Your Email *" />
+                        { error.email && <p className="error-text">{error.email}</p> }
                         </div>
                         {/* Email */}
                         <div className="form-group">
                         <label className="sr-only" htmlFor="contactTitle">
                             Title *
                         </label>
-                        <input className="form-control form-control-sm" id="contactTitle" type="text" placeholder="Title *" required />
+                        <input {...register('title', {required: true})} className="form-control form-control-sm" id="contactTitle" type="text" placeholder="Title *" />
+                        { error.title && <p className="error-text">{error.title}</p> }
                         </div>
                         {/* Email */}
                         <div className="form-group mb-7">
                         <label className="sr-only" htmlFor="contactMessage">
                             Message *
                         </label>
-                        <textarea className="form-control form-control-sm" id="contactMessage" rows={5} placeholder="Message *" required defaultValue={""} />
+                        <textarea {...register('message', {required: true})} className="form-control form-control-sm" id="contactMessage" rows={5} placeholder="Message *" defaultValue={""} />
+                        { error.message && <p className="error-text">{error.message}</p> }
                         </div>
                         {/* Button */}
-                        <button className="btn btn-dark">
+                        <button className="btn btn-dark" type="submit">
                         Send Message
                         </button>
                     </form>
@@ -109,6 +126,6 @@ export default function ContactUs(){
                 </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }

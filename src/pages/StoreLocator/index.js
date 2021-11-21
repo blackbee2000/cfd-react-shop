@@ -1,9 +1,14 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function StoreLocator(){
     return(
-        <div>
+        <Layout>
             <Breadcrumb page={'Contact Us'} activePage={'Store Locator'} />
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/store-locator">Store Locator</BreadcrumbItem>
+            </Breadcrumb>
             <section className="pt-7 pb-12">
             <div className="container">
                 <div className="row justify-content-center">
@@ -96,6 +101,6 @@ export default function StoreLocator(){
                 </div>
             </div>
             </section>
-        </div>
+        </Layout>
     )
 }

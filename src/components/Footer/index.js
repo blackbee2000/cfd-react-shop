@@ -1,4 +1,6 @@
-export function Footer(){
+import { Link } from "react-router-dom";
+
+export default function Footer(){
     return(
         <footer className="bg-dark bg-cover @@classList" style={{backgroundImage: 'url(/img/patterns/pattern-2.svg)'}}>
             <div className="py-12 border-bottom border-gray-700">
@@ -61,16 +63,16 @@ export function Footer(){
                     {/* Links */}
                     <ul className="list-unstyled mb-7 mb-sm-0">
                     <li>
-                        <a className="text-gray-300" href="./contact-us.html">Contact Us</a>
+                        <Link className="text-gray-300" to="/contact-us">Contact Us</Link>
                     </li>
                     <li>
-                        <a className="text-gray-300" href="./faq.html">FAQs</a>
+                        <Link className="text-gray-300" to="/faq">FAQs</Link>
                     </li>
                     <li>
                         <a className="text-gray-300" data-toggle="modal" href="#modalSizeChart">Size Guide</a>
                     </li>
                     <li>
-                        <a className="text-gray-300" href="./shipping-and-returns.html">Shipping &amp; Returns</a>
+                        <Link className="text-gray-300" to="/shipping-returns">Shipping &amp; Returns</Link>
                     </li>
                     </ul>
                 </div>
@@ -82,16 +84,16 @@ export function Footer(){
                     {/* Links */}
                     <ul className="list-unstyled mb-7 mb-sm-0">
                     <li>
-                        <a className="text-gray-300" href="./shop.html">Men's Shopping</a>
+                        <Link className="text-gray-300" to="/shop">Men's Shopping</Link>
                     </li>
                     <li>
-                        <a className="text-gray-300" href="./shop.html">Women's Shopping</a>
+                        <Link className="text-gray-300" to="/shop">Women's Shopping</Link>
                     </li>
                     <li>
-                        <a className="text-gray-300" href="./shop.html">Kids' Shopping</a>
+                        <Link className="text-gray-300" to="/shop">Kids' Shopping</Link>
                     </li>
                     <li>
-                        <a className="text-gray-300" href="./shop.html">Discounts</a>
+                        <Link className="text-gray-300" to="/shop">Discounts</Link>
                     </li>
                     </ul>
                 </div>
@@ -103,7 +105,7 @@ export function Footer(){
                     {/* Links */}
                     <ul className="list-unstyled mb-0">
                     <li>
-                        <a className="text-gray-300" href="./about.html">Our Story</a>
+                        <Link className="text-gray-300" to="/about">Our Story</Link>
                     </li>
                     <li>
                         <a className="text-gray-300" href="#!">Careers</a>

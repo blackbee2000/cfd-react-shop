@@ -1,8 +1,9 @@
+import Layout from "../../components/Layout";
 import { Filters, Product, Slider, Tags } from "./components";
 
 export default function Shop(){
     return(
-        <div>
+        <Layout>
             <div className="py-3 bg-dark bg-pattern @@classList">
                 <div className="container">
                 <div className="row">
@@ -29,6 +30,6 @@ export default function Shop(){
                     </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }

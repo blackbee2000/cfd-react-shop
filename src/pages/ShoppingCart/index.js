@@ -1,9 +1,14 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function ShoppingCart(){
     return(
-        <div>
-            <Breadcrumb activePage={'Shopping Cart'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/shopping-cart">Shopping Cart</BreadcrumbItem>
+            </Breadcrumb>
             <section className="pt-7 pb-12">
                 <div className="container">
                     <div className="row">
@@ -20,14 +25,14 @@ export default function ShoppingCart(){
                             <div className="row align-items-center">
                             <div className="col-3">
                                 {/* Image */}
-                                <a href="product.html">
+                                <Link to="/product">
                                 <img src="/img/products/product-6.jpg" alt="..." className="img-fluid" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="col">
                                 {/* Title */}
                                 <div className="d-flex mb-2 font-weight-bold">
-                                <a className="text-body" href="product.html">Cotton floral print</a> <span className="ml-auto">$40.00</span>
+                                <Link className="text-body" to="/product">Cotton floral print</Link> <span className="ml-auto">$40.00</span>
                                 </div>
                                 {/* Text */}
                                 <p className="mb-7 font-size-sm text-muted">
@@ -54,14 +59,14 @@ export default function ShoppingCart(){
                             <div className="row align-items-center">
                             <div className="col-3">
                                 {/* Image */}
-                                <a href="product.html">
+                                <Link to="/product">
                                 <img src="/img/products/product-10.jpg" alt="..." className="img-fluid" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="col">
                                 {/* Title */}
                                 <div className="d-flex mb-2 font-weight-bold">
-                                <a className="text-body" href="product.html">Suede cross body Bag</a> <span className="ml-auto">$49.00</span>
+                                <Link className="text-body" to="/product">Suede cross body Bag</Link> <span className="ml-auto">$49.00</span>
                                 </div>
                                 {/* Text */}
                                 <p className="mb-7 font-size-sm text-muted">
@@ -133,11 +138,11 @@ export default function ShoppingCart(){
                         </div>
                         </div>
                         {/* Button */}
-                        <a className="btn btn-block btn-dark mb-2" href="checkout.html">Proceed to Checkout</a>
+                        <Link className="btn btn-block btn-dark mb-2" to="/checkout">Proceed to Checkout</Link>
                         {/* Link */}
-                        <a className="btn btn-link btn-sm px-0 text-body" href="shop.html">
+                        <Link className="btn btn-link btn-sm px-0 text-body" to="/shop">
                         <i className="fe fe-arrow-left mr-2" /> Continue Shopping
-                        </a>
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -221,6 +226,6 @@ export default function ShoppingCart(){
                     </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }

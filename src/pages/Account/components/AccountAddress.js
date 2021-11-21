@@ -1,10 +1,15 @@
-import Breadcrumb from "../../../components/Breadcrumb";
-import AccountTags from "../components/AccountTags";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../../components/Breadcrumb";
+import Layout from "../../../components/Layout";
+import AccountTags from "./AccountTags";
 
 export default function AccountAddress(){
     return(
-        <div>
-            <Breadcrumb activePage={'My Account'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/account/address">My Account</BreadcrumbItem>
+            </Breadcrumb>
             <section class="pt-7 pb-12">
                 <div class="container">
                     <div class="row">
@@ -36,9 +41,9 @@ export default function AccountAddress(){
                                     {/* Action */}
                                     <div className="card-action card-action-right">
                                     {/* Button */}
-                                    <a className="btn btn-xs btn-circle btn-white-primary" href="account-address-edit.html">
+                                    <Link className="btn btn-xs btn-circle btn-white-primary" to="/account/address/edit">
                                         <i className="fe fe-edit-2" />
-                                    </a>
+                                    </Link>
                                     {/* Button */}
                                     <button className="btn btn-xs btn-circle btn-white-primary">
                                         <i className="fe fe-x" />
@@ -67,9 +72,9 @@ export default function AccountAddress(){
                                     {/* Action */}
                                     <div className="card-action card-action-right">
                                     {/* Button */}
-                                    <a className="btn btn-xs btn-circle btn-white-primary" href="account-address-edit.html">
+                                    <Link className="btn btn-xs btn-circle btn-white-primary" to="/account/address/edit">
                                         <i className="fe fe-edit-2" />
-                                    </a>
+                                    </Link>
                                     {/* Button */}
                                     <button className="btn btn-xs btn-circle btn-white-primary">
                                         <i className="fe fe-x" />
@@ -80,15 +85,15 @@ export default function AccountAddress(){
                             </div>
                             <div className="col-12">
                                 {/* Button */}
-                                <a className="btn btn-block btn-lg btn-outline-border" href="account-address-edit.html">
+                                <Link className="btn btn-block btn-lg btn-outline-border" to="/account/address/edit">
                                 Add Address <i className="fe fe-plus" />
-                                </a>
+                                </Link>
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>        
-        </div>
+        </Layout>
     )
 }

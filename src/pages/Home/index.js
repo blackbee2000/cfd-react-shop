@@ -1,3 +1,4 @@
+import Layout from "../../components/Layout";
 import { 
     BestPicks, 
     Brands, 
@@ -9,7 +10,7 @@ import {
 
 export default function Home(){
     return (
-        <>
+        <Layout>
             <div className="py-3 bg-dark bg-pattern mb-4">
                 <div className="container">
                     <div className="row">
@@ -30,6 +31,6 @@ export default function Home(){
             <TopSellers />
             <CountDown />
             <Brands />
-        </>
+        </Layout>
     )
 }

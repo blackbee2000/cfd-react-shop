@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Slider(){
     return(
         <div className="flickity-page-dots-inner mb-9" data-flickity="{&quot;pageDots&quot;: true}">
@@ -12,9 +14,9 @@ export function Slider(){
                         2019 Summer Collection
                     </h4>
                     {/* Button */}
-                    <a className="btn btn-link px-0 text-body" href="shop.html">
+                    <Link className="btn btn-link px-0 text-body" to="/shop">
                         View Collection <i className="fe fe-arrow-right ml-2" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 <div className="col-12 col-md-2 col-lg-4 col-xl-6 d-none d-md-block bg-cover" style={{backgroundImage: 'url(/img/covers/cover-16.jpg)'}} />
@@ -35,9 +37,9 @@ export function Slider(){
                         <strong className="text-primary">Use code 4GF5SD</strong>
                     </p>
                     {/* Button */}
-                    <a className="btn btn-outline-dark" href="shop.html">
-                        Shop Now <i className="fe fe-arrow-right ml-2" />
-                    </a>
+                    <Link className="btn btn-link px-0 text-body" to="/shop">
+                        View Collection <i className="fe fe-arrow-right ml-2" />
+                    </Link>
                     </div>
                 </div>
                 </div>
@@ -54,7 +56,7 @@ export function Slider(){
                     {/* Heading */}
                     <h1 className="display-4 text-uppercase">50% off</h1>
                     {/* Link */}
-                    <a className="link-underline text-reset" href="shop.html">Shop Collection</a>
+                    <Link className="link-underline text-reset" to="/shop">Shop Collection</Link>
                     </div>
                 </div>
                 </div>

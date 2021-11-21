@@ -1,11 +1,15 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 import { Features, Reviews } from "../Home/components";
 import { AboutComponent, Images, OurStoryOne, OurStoryTwo, Slogan } from "./components";
 
 export default function About(){
     return (
-        <div>
-            <Breadcrumb activePage={'About Us'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/about">About</BreadcrumbItem>
+            </Breadcrumb>
             {/* WELCOME */}
             <section>
             <div className="container">
@@ -36,6 +40,6 @@ export default function About(){
                 </div>
             </section>
             <Features />
-        </div>
+        </Layout>
     )
 }

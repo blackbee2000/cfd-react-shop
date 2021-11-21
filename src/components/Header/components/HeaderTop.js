@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function HeaderTop(){
     return (
         <div className="navbar navbar-topbar navbar-expand-xl navbar-light bg-light">
@@ -55,13 +57,13 @@ export default function HeaderTop(){
                 {/* Nav */}
                 <ul className="nav navbar-nav mr-8">
                     <li className="nav-item">
-                    <a className="nav-link" href="./shipping-and-returns.html">Shipping</a>
+                        <NavLink className="nav-link" to="/shipping-returns">Shipping</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="./faq.html">FAQ</a>
+                        <NavLink className="nav-link" to="/faq">FAQ</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="./contact-us.html">Contact</a>
+                        <NavLink className="nav-link" to="/contact-us">Contact</NavLink>
                     </li>
                 </ul>
                 {/* Nav */}

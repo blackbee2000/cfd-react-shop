@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Categories(){
     return(
         <section>
@@ -13,9 +15,9 @@ export function Categories(){
                 </div>
                 <div className="card-body mt-auto py-8">
                     {/* Button */}
-                    <a className="btn btn-white stretched-link" href="shop.html">
+                    <Link className="btn btn-white stretched-link" to="/shop">
                     Shop Women <i className="fe fe-arrow-right ml-2" />
-                    </a>
+                    </Link>
                 </div>
                 </div>
             </div>
@@ -30,9 +32,9 @@ export function Categories(){
                 </div>
                 <div className="card-body mt-auto py-8">
                     {/* Button */}
-                    <a className="btn btn-white stretched-link" href="shop.html">
+                    <Link className="btn btn-white stretched-link" to="/shop">
                     Shop Men <i className="fe fe-arrow-right ml-2" />
-                    </a>
+                    </Link>
                 </div>
                 </div>
             </div>
@@ -47,9 +49,9 @@ export function Categories(){
                 </div>
                 <div className="card-body mt-auto py-8">
                     {/* Button */}
-                    <a className="btn btn-white stretched-link" href="shop.html">
+                    <Link className="btn btn-white stretched-link" to="/shop">
                     Shop Kids <i className="fe fe-arrow-right ml-2" />
-                    </a>
+                    </Link>
                 </div>
                 </div>
             </div>

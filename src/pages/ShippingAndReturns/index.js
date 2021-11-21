@@ -1,9 +1,14 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function ShippingAndReturnS(){
     return(
-        <div>
-            <Breadcrumb activePage={'Shipping & Returns'}/>
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/shipping-returns">Shipping & Returns</BreadcrumbItem>
+            </Breadcrumb>
             <section className="pt-7 pb-12">
                 <div className="container">
                 <div className="row justify-content-center">
@@ -168,20 +173,20 @@ export default function ShippingAndReturnS(){
                     {/* Buttons */}
                     <div className="row mt-9">
                         <div className="col-12 col-md-6">
-                        <a className="btn btn-lg btn-block btn-outline-dark" href="faq.html">
+                        <Link className="btn btn-lg btn-block btn-outline-dark" to="/faq">
                             Have more Questions?
-                        </a>
+                        </Link>
                         </div>
                         <div className="col-12 col-md-6">
-                        <a className="btn btn-lg btn-block btn-outline-dark" href="contact-us.html">
+                        <Link className="btn btn-lg btn-block btn-outline-dark" to="/contact-us">
                             Want to Contact Us?
-                        </a>
+                        </Link>
                         </div>
                     </div>
                     </div>
                 </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }

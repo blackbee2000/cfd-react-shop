@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function ProductLike(){
     return(
         <section className="pt-11">
@@ -18,10 +20,10 @@ export function ProductLike(){
                         {/* Image */}
                         <div className="card-img">
                         {/* Image */}
-                        <a className="card-img-hover" href="product.html">
+                        <Link className="card-img-hover" to="/product">
                             <img className="card-img-top card-img-back" src="/img/products/product-120.jpg" alt="..." />
                             <img className="card-img-top card-img-front" src="/img/products/product-5.jpg" alt="..." />
-                        </a>
+                        </Link>
                         {/* Actions */}
                         <div className="card-actions">
                             <span className="card-action">
@@ -45,13 +47,13 @@ export function ProductLike(){
                         <div className="card-body px-0">
                         {/* Category */}
                         <div className="font-size-xs">
-                            <a className="text-muted" href="shop.html">Shoes</a>
+                            <Link className="text-muted" to="/shop">Shoes</Link>
                         </div>
                         {/* Title */}
                         <div className="font-weight-bold">
-                            <a className="text-body" href="product.html">
+                            <Link className="text-body" to="/product">
                             Leather mid-heel Sandals
-                            </a>
+                            </Link>
                         </div>
                         {/* Price */}
                         <div className="font-weight-bold text-muted">
@@ -66,10 +68,10 @@ export function ProductLike(){
                         {/* Image */}
                         <div className="card-img">
                         {/* Image */}
-                        <a className="card-img-hover" href="product.html">
+                        <Link className="card-img-hover" to="/product">
                             <img className="card-img-top card-img-back" src="/img/products/product-121.jpg" alt="..." />
                             <img className="card-img-top card-img-front" src="/img/products/product-6.jpg" alt="..." />
-                        </a>
+                        </Link>
                         {/* Actions */}
                         <div className="card-actions">
                             <span className="card-action">
@@ -93,13 +95,13 @@ export function ProductLike(){
                         <div className="card-body px-0">
                         {/* Category */}
                         <div className="font-size-xs">
-                            <a className="text-muted" href="shop.html">Dresses</a>
+                            <Link className="text-muted" to="/shop">Dresses</Link>
                         </div>
                         {/* Title */}
                         <div className="font-weight-bold">
-                            <a className="text-body" href="product.html">
+                            <Link className="text-body" to="/product">
                             Cotton floral print Dress
-                            </a>
+                            </Link>
                         </div>
                         {/* Price */}
                         <div className="font-weight-bold text-muted">
@@ -118,10 +120,10 @@ export function ProductLike(){
                         {/* Image */}
                         <div className="card-img">
                         {/* Image */}
-                        <a className="card-img-hover" href="product.html">
+                        <Link className="card-img-hover" to="/product">
                             <img className="card-img-top card-img-back" src="/img/products/product-122.jpg" alt="..." />
                             <img className="card-img-top card-img-front" src="/img/products/product-7.jpg" alt="..." />
-                        </a>
+                        </Link>
                         {/* Actions */}
                         <div className="card-actions">
                             <span className="card-action">
@@ -145,13 +147,13 @@ export function ProductLike(){
                         <div className="card-body px-0">
                         {/* Category */}
                         <div className="font-size-xs">
-                            <a className="text-muted" href="shop.html">Shoes</a>
+                            <Link className="text-muted" to="/shop">Shoes</Link>
                         </div>
                         {/* Title */}
                         <div className="font-weight-bold">
-                            <a className="text-body" href="product.html">
+                            <Link className="text-body" to="/product">
                             Leather Sneakers
-                            </a>
+                            </Link>
                         </div>
                         {/* Price */}
                         <div className="font-weight-bold">
@@ -167,9 +169,9 @@ export function ProductLike(){
                         {/* Image */}
                         <div className="card-img">
                         {/* Image */}
-                        <a href="#!">
+                        <Link to="/product">
                             <img className="card-img-top card-img-front" src="/img/products/product-8.jpg" alt="..." />
-                        </a>
+                        </Link>
                         {/* Actions */}
                         <div className="card-actions">
                             <span className="card-action">
@@ -193,13 +195,13 @@ export function ProductLike(){
                         <div className="card-body px-0">
                         {/* Category */}
                         <div className="font-size-xs">
-                            <a className="text-muted" href="shop.html">Tops</a>
+                            <Link className="text-muted" to="/shop">Tops</Link>
                         </div>
                         {/* Title */}
                         <div className="font-weight-bold">
-                            <a className="text-body" href="product.html">
+                            <Link className="text-body" to="/product">
                             Cropped cotton Top
-                            </a>
+                            </Link>
                         </div>
                         {/* Price */}
                         <div className="font-weight-bold text-muted">

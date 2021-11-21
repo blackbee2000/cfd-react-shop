@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Product(){
     return(
         <div>
@@ -12,10 +14,10 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a className="card-img-hover" href="product.html">
+                    <Link className="card-img-hover" to="/product">
                     <img className="card-img-top card-img-back" src="/img/products/product-120.jpg" alt="..." />
                     <img className="card-img-top card-img-front" src="/img/products/product-5.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -39,13 +41,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Shoes</a>
+                    <Link className="text-muted" to="/shop">Shoes</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Leather mid-heel Sandals
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold text-muted">
@@ -60,10 +62,10 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a className="card-img-hover" href="product.html">
+                    <Link className="card-img-hover" to="/product">
                     <img className="card-img-top card-img-back" src="/img/products/product-121.jpg" alt="..." />
                     <img className="card-img-top card-img-front" src="/img/products/product-6.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -87,13 +89,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Dresses</a>
+                    <Link className="text-muted" to="/shop">Dresses</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Cotton floral print Dress
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold text-muted">
@@ -112,10 +114,10 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a className="card-img-hover" href="product.html">
+                    <Link className="card-img-hover" to="/product">
                     <img className="card-img-top card-img-back" src="/img/products/product-122.jpg" alt="..." />
                     <img className="card-img-top card-img-front" src="/img/products/product-7.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -139,13 +141,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Shoes</a>
+                    <Link className="text-muted" to="/shop">Shoes</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Leather Sneakers
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold">
@@ -161,9 +163,9 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a href="#!">
+                    <Link to="/product">
                     <img className="card-img-top card-img-front" src="/img/products/product-8.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -187,13 +189,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Tops</a>
+                    <Link className="text-muted" to="/shop">Tops</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Cropped cotton Top
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold text-muted">
@@ -208,9 +210,9 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a href="#!">
+                    <Link to="/product">
                     <img className="card-img-top card-img-front" src="/img/products/product-9.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -234,13 +236,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Dresses</a>
+                    <Link className="text-muted" to="/shop">Dresses</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Floral print midi Dress
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold text-muted">
@@ -259,10 +261,10 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a className="card-img-hover" href="product.html">
+                    <Link className="card-img-hover" to="/product">
                     <img className="card-img-top card-img-back" src="/img/products/product-123.jpg" alt="..." />
                     <img className="card-img-top card-img-front" src="/img/products/product-10.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -286,13 +288,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Bags</a>
+                    <Link className="text-muted" to="/shop">Bags</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Suede cross body Bag
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold">
@@ -308,10 +310,10 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a className="card-img-hover" href="product.html">
+                    <Link className="card-img-hover" to="/product">
                     <img className="card-img-top card-img-back" src="/img/products/product-124.jpg" alt="..." />
                     <img className="card-img-top card-img-front" src="/img/products/product-11.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -335,13 +337,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Skirts</a>
+                    <Link className="text-muted" to="/shop">Skirts</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Printed A-line Skirt
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold text-muted">
@@ -360,9 +362,9 @@ export function Product(){
                 {/* Image */}
                 <div className="card-img">
                     {/* Image */}
-                    <a href="#!">
+                    <Link to="/product">
                     <img className="card-img-top card-img-front" src="/img/products/product-12.jpg" alt="..." />
-                    </a>
+                    </Link>
                     {/* Actions */}
                     <div className="card-actions">
                     <span className="card-action">
@@ -386,13 +388,13 @@ export function Product(){
                 <div className="card-body px-0">
                     {/* Category */}
                     <div className="font-size-xs">
-                    <a className="text-muted" href="shop.html">Shoes</a>
+                    <Link className="text-muted" to="/shop">Shoes</Link>
                     </div>
                     {/* Title */}
                     <div className="font-weight-bold">
-                    <a className="text-body" href="product.html">
+                    <Link className="text-body" to="/product">
                         Heel strappy Sandals
-                    </a>
+                    </Link>
                     </div>
                     {/* Price */}
                     <div className="font-weight-bold text-muted">

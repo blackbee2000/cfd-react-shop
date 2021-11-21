@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Brands(){
     return(
         <section className="py-12 bg-light">
@@ -19,11 +21,11 @@ export function Brands(){
                     {/* Image */}
                     <img src="/img/products/product-16.jpg" alt="..." className="card-img" />
                     {/* Overlay */}
-                    <a className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" href="blog-post.html">
-                    <p className="my-0 font-size-xxs text-center text-white">
-                        <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
-                    </p>
-                    </a>
+                    <Link className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" to="/blog/blog-post">
+                        <p className="my-0 font-size-xxs text-center text-white">
+                            <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
+                        </p>
+                    </Link>
                 </div>
                 </div>
                 <div className="col-6 col-sm-4 col-md px-1">
@@ -32,11 +34,11 @@ export function Brands(){
                     {/* Image */}
                     <img src="/img/products/product-17.jpg" alt="..." className="card-img" />
                     {/* Overlay */}
-                    <a className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" href="blog-post.html">
-                    <p className="my-0 font-size-xxs text-center text-white">
-                        <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
-                    </p>
-                    </a>
+                    <Link className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" to="/blog/blog-post">
+                        <p className="my-0 font-size-xxs text-center text-white">
+                            <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
+                        </p>
+                    </Link>
                 </div>
                 </div>
                 <div className="col-6 col-sm-4 col-md px-1">
@@ -45,11 +47,11 @@ export function Brands(){
                     {/* Image */}
                     <img src="/img/products/product-18.jpg" alt="..." className="card-img" />
                     {/* Overlay */}
-                    <a className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" href="blog-post.html">
-                    <p className="my-0 font-size-xxs text-center text-white">
-                        <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
-                    </p>
-                    </a>
+                    <Link className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" to="/blog/blog-post">
+                        <p className="my-0 font-size-xxs text-center text-white">
+                            <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
+                        </p>
+                    </Link>
                 </div>
                 </div>
                 <div className="col-6 col-sm-4 col-md px-1">
@@ -58,11 +60,11 @@ export function Brands(){
                     {/* Image */}
                     <img src="/img/products/product-19.jpg" alt="..." className="card-img" />
                     {/* Overlay */}
-                    <a className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" href="blog-post.html">
-                    <p className="my-0 font-size-xxs text-center text-white">
-                        <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
-                    </p>
-                    </a>
+                    <Link className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" to="/blog/blog-post">
+                        <p className="my-0 font-size-xxs text-center text-white">
+                            <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
+                        </p>
+                    </Link>
                 </div>
                 </div>
                 <div className="col-6 col-sm-4 col-md px-1">
@@ -71,11 +73,11 @@ export function Brands(){
                     {/* Image */}
                     <img src="/img/products/product-20.jpg" alt="..." className="card-img" />
                     {/* Overlay */}
-                    <a className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" href="blog-post.html">
-                    <p className="my-0 font-size-xxs text-center text-white">
-                        <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
-                    </p>
-                    </a>
+                    <Link className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" to="/blog/blog-post">
+                        <p className="my-0 font-size-xxs text-center text-white">
+                            <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
+                        </p>
+                    </Link>
                 </div>
                 </div>
                 <div className="col-6 col-sm-4 col-md px-1">
@@ -84,11 +86,11 @@ export function Brands(){
                     {/* Image */}
                     <img src="/img/products/product-21.jpg" alt="..." className="card-img" />
                     {/* Overlay */}
-                    <a className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" href="blog-post.html">
-                    <p className="my-0 font-size-xxs text-center text-white">
-                        <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
-                    </p>
-                    </a>
+                    <Link className="card-img-overlay card-img-overlay-hover align-items-center bg-dark-40" to="/blog/blog-post">
+                        <p className="my-0 font-size-xxs text-center text-white">
+                            <i className="fe fe-heart mr-2" /> 248 <i className="fe fe-message-square mr-2 ml-3" /> 7
+                        </p>
+                    </Link>
                 </div>
                 </div>
             </div>

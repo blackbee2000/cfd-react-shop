@@ -1,10 +1,14 @@
-import Breadcrumb from "../../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../../components/Breadcrumb";
+import Layout from "../../../components/Layout";
 import AccountTags from "../components/AccountTags";
 
 export default function AccountOrders(){
     return(
-        <div>
-            <Breadcrumb activePage={'My Account'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/account/orders">My Account</BreadcrumbItem>
+            </Breadcrumb>
             <section class="pt-7 pb-12">
                 <div class="container">
                     <div class="row">
@@ -296,6 +300,6 @@ export default function AccountOrders(){
                     </div>
                 </div>
             </section>        
-        </div>
+        </Layout>
     )
 }

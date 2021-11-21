@@ -1,10 +1,15 @@
-import Breadcrumb from "../../../components/Breadcrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../../components/Breadcrumb";
+import Layout from "../../../components/Layout";
 import AccountTags from "../components/AccountTags";
 
 export default function AccountOrder(){
     return(
-        <div>
-            <Breadcrumb activePage={'My Account'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/account/order">My Account</BreadcrumbItem>
+            </Breadcrumb>
             <section class="pt-7 pb-12">
                 <div class="container">
                     <div class="row">
@@ -71,12 +76,12 @@ export default function AccountOrder(){
                                     <div className="row align-items-center">
                                     <div className="col-4 col-md-3 col-xl-2">
                                         {/* Image */}
-                                        <a href="product.html"><img src="/img/products/product-6.jpg" alt="..." className="img-fluid" /></a>
+                                        <Link to="/product"><img src="/img/products/product-6.jpg" alt="..." className="img-fluid" /></Link>
                                     </div>
                                     <div className="col">
                                         {/* Title */}
                                         <p className="mb-4 font-size-sm font-weight-bold">
-                                        <a className="text-body" href="product.html">Cotton floral print Dress x 1</a> <br />
+                                        <Link className="text-body" to="/product">Cotton floral print Dress x 1</Link> <br />
                                         <span className="text-muted">$40.00</span>
                                         </p>
                                         {/* Text */}
@@ -91,12 +96,12 @@ export default function AccountOrder(){
                                     <div className="row align-items-center">
                                     <div className="col-4 col-md-3 col-xl-2">
                                         {/* Image */}
-                                        <a href="product.html"><img src="/img/products/product-10.jpg" alt="..." className="img-fluid" /></a>
+                                        <Link to="/product"><img src="/img/products/product-10.jpg" alt="..." className="img-fluid" /></Link>
                                     </div>
                                     <div className="col">
                                         {/* Title */}
                                         <p className="mb-4 font-size-sm font-weight-bold">
-                                        <a className="text-body" href="product.html">Suede cross body Bag x 1</a> <br />
+                                        <Link className="text-body" to="/product">Suede cross body Bag x 1</Link> <br />
                                         <span className="text-muted">$49.00</span>
                                         </p>
                                         {/* Text */}
@@ -110,12 +115,12 @@ export default function AccountOrder(){
                                     <div className="row align-items-center">
                                     <div className="col-4 col-md-3 col-xl-2">
                                         {/* Image */}
-                                        <a href="product.html"><img src="/img/products/product-48.jpg" alt="..." className="img-fluid" /></a>
+                                        <Link to="/product"><img src="/img/products/product-48.jpg" alt="..." className="img-fluid" /></Link>
                                     </div>
                                     <div className="col">
                                         {/* Title */}
                                         <p className="mb-4 font-size-sm font-weight-bold">
-                                        <a className="text-body" href="product.html">Sweatshirt with Pocket</a> <br />
+                                        <Link className="text-body" to="/product">Sweatshirt with Pocket</Link> <br />
                                         <span className="text-muted">$39.00</span>
                                         </p>
                                         {/* Text */}
@@ -212,6 +217,6 @@ export default function AccountOrder(){
                     </div>
                 </div>
             </section>  
-        </div>
+        </Layout>
     )
 }

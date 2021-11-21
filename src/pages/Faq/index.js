@@ -1,9 +1,13 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function Faq(){
     return(
-        <div>
-            <Breadcrumb activePage={'FAQ'}/>
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/faq">FAQ</BreadcrumbItem>
+            </Breadcrumb>
             <section className="pt-7 pb-12">
                 <div className="container">
                 <div className="row justify-content-center">
@@ -224,6 +228,6 @@ export default function Faq(){
                 </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }

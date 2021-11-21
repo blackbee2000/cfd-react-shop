@@ -1,10 +1,15 @@
-import Breadcrumb from "../../../components/Breadcrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../../components/Breadcrumb";
+import Layout from "../../../components/Layout";
 import AccountTags from "../components/AccountTags";
 
 export default function AccountWishlist(){
     return(
-        <div>
-            <Breadcrumb activePage={'My Account'} />
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/account/wishlist">My Account</BreadcrumbItem>
+            </Breadcrumb>
             <section class="pt-7 pb-12">
                 <div class="container">
                     <div class="row">
@@ -35,7 +40,7 @@ export default function AccountWishlist(){
                                 </div>
                                 {/* Body */}
                                 <div className="card-body font-weight-bold text-center">
-                                    <a className="text-body" href="product.html">Cotton floral print Dress</a> <br />
+                                    <Link className="text-body" to="/product">Cotton floral print Dress</Link> <br />
                                     <span className="text-muted">$40.00</span>
                                 </div>
                                 </div>
@@ -62,7 +67,7 @@ export default function AccountWishlist(){
                                 </div>
                                 {/* Body */}
                                 <div className="card-body font-weight-bold text-center">
-                                    <a className="text-body" href="product.html">Suede cross body Bag</a> <br />
+                                    <Link className="text-body" to="/product">Suede cross body Bag</Link> <br />
                                     <span>
                                     <span className="font-size-xs text-gray-350 text-decoration-line-through">$85.00</span>
                                     <span className="text-primary">$49.00</span>
@@ -88,7 +93,7 @@ export default function AccountWishlist(){
                                 </div>
                                 {/* Body */}
                                 <div className="card-body font-weight-bold text-center">
-                                    <a className="text-reset" href="product.html">Cotton leaf print Shirt</a>
+                                    <Link className="text-reset" to="/product">Cotton leaf print Shirt</Link>
                                     <span className="text-muted">$65.00</span>
                                 </div>
                                 </div>
@@ -111,7 +116,7 @@ export default function AccountWishlist(){
                                 </div>
                                 {/* Body */}
                                 <div className="card-body font-weight-bold text-center">
-                                    <a className="text-body" href="product.html">Leather Sneakers</a> <br />
+                                    <Link className="text-body" to="/product">Leather Sneakers</Link> <br />
                                     <a className="text-primary" href="#">Select Options</a>
                                 </div>
                                 </div>
@@ -134,7 +139,7 @@ export default function AccountWishlist(){
                                 </div>
                                 {/* Body */}
                                 <div className="card-body font-weight-bold text-center">
-                                    <a className="text-body" href="product.html">Another fine dress</a> <br />
+                                    <Link className="text-body" to="/product">Another fine dress</Link> <br />
                                     <span className="text-muted">$99.00</span>
                                 </div>
                                 </div>
@@ -177,6 +182,6 @@ export default function AccountWishlist(){
                     </div>
                 </div>
             </section>        
-        </div>
+        </Layout>
     )
 }

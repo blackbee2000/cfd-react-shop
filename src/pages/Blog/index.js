@@ -1,9 +1,14 @@
-import Breadcrumb from "../../components/Breadcrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb, { BreadcrumbItem } from "../../components/Breadcrumb";
+import Layout from "../../components/Layout";
 
 export default function Blog(){
     return(
-        <div>
-            <Breadcrumb activePage={'Blog'}/>
+        <Layout>
+            <Breadcrumb>
+                <BreadcrumbItem to="/">Home</BreadcrumbItem>
+                <BreadcrumbItem to="/blog">Blog</BreadcrumbItem>
+            </Breadcrumb>
             {/* CONTENT */}
             <section className="pt-7 pb-12">
             <div className="container">
@@ -41,9 +46,9 @@ export default function Blog(){
                         day let over gathered, grass face one every light of under.
                         </p>
                         {/* Button */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="blog-post.html">
-                        Read More <i className="fe fe-arrow-right ml-2" />
-                        </a>
+                        <Link className="btn btn-link stretched-link px-0 text-reset" to="/blog-post">
+                            Read More <i className="fe fe-arrow-right ml-2" />
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -66,9 +71,9 @@ export default function Blog(){
                         moveth man replenish. Meat place is so fruit.
                         </p>
                         {/* Button */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="blog-post.html">
-                        Read More <i className="fe fe-arrow-right ml-2" />
-                        </a>
+                        <Link className="btn btn-link stretched-link px-0 text-reset" to="/blog-post">
+                            Read More <i className="fe fe-arrow-right ml-2" />
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -91,9 +96,9 @@ export default function Blog(){
                         doesn't together bearing also can't heaven their.
                         </p>
                         {/* Button */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="blog-post.html">
-                        Read More <i className="fe fe-arrow-right ml-2" />
-                        </a>
+                        <Link className="btn btn-link stretched-link px-0 text-reset" to="/blog-post">
+                            Read More <i className="fe fe-arrow-right ml-2" />
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -116,9 +121,9 @@ export default function Blog(){
                         Years dominion shall from years a hath Good appear yielding.
                         </p>
                         {/* Button */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="blog-post.html">
-                        Read More <i className="fe fe-arrow-right ml-2" />
-                        </a>
+                        <Link className="btn btn-link stretched-link px-0 text-reset" to="/blog-post">
+                            Read More <i className="fe fe-arrow-right ml-2" />
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -141,9 +146,9 @@ export default function Blog(){
                         yielding green was fly one kind fish hath be be winged.
                         </p>
                         {/* Button */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="blog-post.html">
-                        Read More <i className="fe fe-arrow-right ml-2" />
-                        </a>
+                        <Link className="btn btn-link stretched-link px-0 text-reset" to="/blog-post">
+                            Read More <i className="fe fe-arrow-right ml-2" />
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -166,9 +171,9 @@ export default function Blog(){
                         two. Fowl may open first.
                         </p>
                         {/* Button */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="blog-post.html">
-                        Read More <i className="fe fe-arrow-right ml-2" />
-                        </a>
+                        <Link className="btn btn-link stretched-link px-0 text-reset" to="/blog-post">
+                            Read More <i className="fe fe-arrow-right ml-2" />
+                        </Link>
                     </div>
                     </div>
                 </div>
@@ -196,6 +201,6 @@ export default function Blog(){
                 </div>
             </div>
             </section>
-        </div>
+        </Layout>
     )
 }
